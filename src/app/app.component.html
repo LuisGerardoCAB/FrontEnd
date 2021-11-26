@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-link">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-link">
+        <button (click)="NuevoProducto()" class="btn btn-info">+ Producto</button>
+      </li>
+
+      <li class="nav-link">
+        <button (click)="ListarProducto()" class="btn btn-info" style="margin-left: 10px;">Listar Productos</button>
+      </li>
+
+      <li class="nav-link">
+        <button (click)="NuevoInspeccion()" class="btn btn-info">+ Hoja de Inspeccion</button>
+      </li>
+
+      <li class="nav-link">
+        <button (click)="ListarInspeccion()" class="btn btn-info" style="margin-left: 10px;">Hoja de inspeccion</button>
+      </li>
+
+      <li class="nav-link" style="margin-left: 100px;">
+        <h2>Orden de Produccion</h2>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<br />
+
+<router-outlet></router-outlet>

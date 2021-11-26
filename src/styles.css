@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('./app/Images/working-with-modern-laptop-and-smartphone-picjumbo-com.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: small;
+  width: 100%;
+  align-content: center;
+}

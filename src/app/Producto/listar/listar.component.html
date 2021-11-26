@@ -1,0 +1,95 @@
+<div class="container" style="width: 100%;">
+  <div class="card" style="width: 100%;">
+
+    <div class="card-header" style="width: 100%;">
+      <h3>Productos</h3>
+    </div>
+
+    <div class="card-body" style="width: 100%;">
+      <div id="info">
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control" name="filterPost" placeholder="Buscar Cliente..." [(ngModel)]="filterPost">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <td><label for="">#</label></td>
+              <td><label for="">Cliente</label></td>
+              <td><label for="">Fecha</label></td>
+              <td><label for="">No.Operacion</label></td>
+              <td><label for="">Pedido</label></td>
+              <td><label for="">Ref.SAE</label></td>
+              <td><label for="">Producto</label></td>
+              <td><label for="">Color</label></td>
+              <td><label for="">Pigmentado</label></td>
+              <td><label for="">SAE</label></td>
+              <td><label for="">Cantidad</label></td>
+              <td><label for="">Clave</label></td>
+              <td><label for="">FactorConversion</label></td>
+              <td><label for="">Piezas</label></td>
+              <td><label for="">Caja</label></td>
+              <td><label for="">Bolsa</label></td>
+              <td><label for="">ClaveEmpaque</label></td>
+              <td><label for="">Observaciones</label></td>
+              <td><label for="">Descripcion</label></td>
+              <td><label for="">Cant.Insumos</label></td>
+              <td><label for="">Cant.Arr.Maquina</label></td>
+              <td><label for="">Desc.Arr.Maquina</label></td>
+              <td><label for="">Cant.Prod</label></td>
+              <td><label for="">Desc.Produccion</label></td>
+              <td><label for="">Cant.Total.Mat.Prima</label></td>
+              <td><label for="">Desc.Total.Mat.Prima</label></td>
+              <td><label for="">Observacion.Gral</label></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let produc of product | filter : filterPost">
+              <td>{{produc.id}}</td>
+              <td>{{produc.cliente}}</td>
+              <td>{{produc.fecha}}</td>
+              <td>{{produc.nooperacion}}</td>
+              <td>{{produc.pedido}}</td>
+              <td>{{produc.refsae}}</td>
+              <td>{{produc.producto}}</td>
+              <td>{{produc.color}}</td>
+              <td>{{produc.pigmentado}}</td>
+              <td>{{produc.sae}}</td>
+              <td>{{produc.cantidad}}</td>
+              <td>{{produc.clave}}</td>
+              <td>{{produc.factorconversion}}</td>
+              <td>{{produc.piezas}}</td>
+              <td>{{produc.caja}}</td>
+              <td>{{produc.bolsa}}</td>
+              <td>{{produc.claveempaque}}</td>
+              <td>{{produc.observaciones}}</td>
+              <td>{{produc.descripcion}}</td>
+              <td>{{produc.cantinsumos}}</td>
+              <td>{{produc.cantarrmaquina}}</td>
+              <td>{{produc.descarrmaquina}}</td>
+              <td>{{produc.cantproduccion}}</td>
+              <td>{{produc.descproduccion}}</td>
+              <td>{{produc.canttotalmatprima}}</td>
+              <td>{{produc.desctotalmatprima}}</td>
+              <td>{{produc.observacionesgral}}</td>
+              <td><button (click)="EditarProducto(produc)" class="btn btn-warning">Editar</button></td>
+              <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
+            </tr>
+          </tbody>
+        </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

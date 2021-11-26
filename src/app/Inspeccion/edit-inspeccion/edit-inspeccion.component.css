@@ -1,0 +1,8 @@
+#info {
+  overflow:scroll;
+  height: auto;
+  width: 100%;
+}
+#info table {
+  width: 100%;
+}

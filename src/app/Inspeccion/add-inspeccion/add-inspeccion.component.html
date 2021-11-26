@@ -1,0 +1,173 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h4>Inspección en Proceso</h4>
+    </div>
+    <div class="card-body" style="width: 100%;">
+
+      <form action="">
+
+        <table align="center">
+
+          <tr>
+            <td>
+              <label for="">Cliente:</label>
+              <input [(ngModel)]="inspecciones.cliente" name="cliente" type="text" class="form-control">
+            </td>
+            <td>
+              <label for="">Producto:</label>
+              <input [(ngModel)]="inspecciones.product" name="product" type="text" class="form-control"></td>
+            <td>
+              <label for="">Clave:</label>
+              <input [(ngModel)]="inspecciones.clave" name="clave" type="text" class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Frecuencia de Inspeccion:</label>
+              <input [(ngModel)]="inspecciones.frecinsp" name="frecinsp" type="text" class="form-control"></td>
+            <td>
+              <label for="">Tamaño de la muestra:</label>
+              <input [(ngModel)]="inspecciones.tammuestra" name="tammuestra" type="text" class="form-control"></td>
+          </tr>
+
+        </table>
+
+        <hr />
+
+        <table align="center">
+          <tr>
+            <td>
+              <h4>Liberacion</h4>
+            </td>
+          </tr>
+        </table>
+
+        <br />
+
+        <table align="center">
+          <tr>
+            <td></td>
+            <td>
+              <label for="">Especificaciones</label>
+            </td>
+            <td>
+              <label for="">Tiempo</label>
+            </td>
+            <td>
+              <label for="">Observaciones</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Long. Espiral</label></td>
+            <td><input [(ngModel)]="inspecciones.longespiral" name="longespiral" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.tiempo" name="tiempo" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.observaciones" name="observaciones" type="text" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Diametro Interior</label></td>
+            <td><input [(ngModel)]="inspecciones.dminterior" name="dminterior" type="text" class="form-control"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><label for="">Espesor (Calibrado)</label></td>
+            <td><input [(ngModel)]="inspecciones.espcalib" name="espcalib" type="text" class="form-control"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><label for="">Color y Brillo</label></td>
+            <td><input [(ngModel)]="inspecciones.colorbrillo" name="colorbrillo" type="text" class="form-control"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <hr />
+
+        <table align="center">
+          <tr>
+            <td align="center"><label for="">Vo. Bo. Jefe de Producción</label></td>
+            <td align="center"><input size="100%" style="max-width: 800px;" [(ngModel)]="inspecciones.jefeprod" name="jefeprod" type="text"
+                class="form-control"></td>
+          </tr>
+        </table>
+
+        <hr />
+
+        <table align="center">
+          <tr>
+            <td></td>
+            <td align="center"><label for="">Zona 1</label></td>
+            <td align="center"><label for="">Zona 2</label></td>
+            <td align="center"><label for="">Zona 3</label></td>
+            <td align="center"><label for="">Husillo</label></td>
+            <td align="center"><label for="">Formador</label></td>
+          </tr>
+          <tr>
+            <td>Parametros</td>
+            <td><input size="15px" [(ngModel)]="inspecciones.param1" name="param1" type="text" class="form-control"></td>
+            <td><input size="15px" [(ngModel)]="inspecciones.param2" name="param2" type="text" class="form-control"></td>
+            <td><input size="15px" [(ngModel)]="inspecciones.param3" name="param3" type="text" class="form-control"></td>
+            <td><input size="15px" [(ngModel)]="inspecciones.param4" name="param4" type="text" class="form-control"></td>
+            <td><input size="15px" [(ngModel)]="inspecciones.param5" name="param5" type="text" class="form-control"></td>
+          </tr>
+        </table>
+
+        <hr />
+        <table id="info">
+          <tr>
+            <td><label for="">Supervisor de turno</label></td>
+            <td><label for="">No. Maquina</label></td>
+            <td><label for="">Fecha</label></td>
+            <td><label for="">Turno</label></td>
+            <td><label for="">Hora</label></td>
+            <td><label for="">Long. Espiral</label></td>
+            <td><label for="">Diametro Interior</label></td>
+            <td><label for="">Espesor calibrado</label></td>
+            <td><label for="">Paso</label></td>
+            <td><label for="">Color/Brillo</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Temp. Zona 1</label></td>
+            <td><label for="">Temp. Zona 2</label></td>
+            <td><label for="">Temp. Zona 3</label></td>
+            <td><label for="">Vel. Extrusora</label></td>
+            <td><label for="">Vel. Jalador</label></td>
+          </tr>
+
+          <tr>
+            <td><input [(ngModel)]="inspecciones.supturno" name="supturno" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.nomaquina" name="nomaquina" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.fecha" name="cliente" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.turno" name="turno" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.hora" name="hora" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.longesp" name="longesp" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.dmint" name="dmint" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.espesor" name="espesor" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.paso" name="paso" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.colb" name="colb" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.timee" name="time" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.zona1" name="zona1" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.zona2" name="zona2" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.zona3" name="zona3" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.velextrusora" name="velextrusora" type="text" class="form-control"></td>
+            <td><input [(ngModel)]="inspecciones.veljalador" name="veljalador" type="text" class="form-control"></td>
+          </tr>
+
+        </table>
+
+        <br />
+
+        <button (click)="GuardarInspeccion()" class="btn btn-danger">Guardar</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr/>

@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="card">
+
+    <div class="card-header">
+      <h3>Inspecciones</h3>
+    </div>
+
+    <div class="card-body" style="width: 100%;">
+
+      <hr />
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar Supervisor...">
+          </div>
+        </div>
+      </div>
+
+      <div id="info">
+        <div class="row">
+          <div class="col">
+            <table class="table table-striped">
+        <thead>
+          <tr>
+            <td><label for="">#</label></td>
+            <td><label for="">Cliente:</label></td>
+            <td><label for="">Producto:</label></td>
+            <td><label for="">Frecuencia de Inspeccion:</label></td>
+            <td><label for="">Tamaño de la muestra:</label></td>
+            <td><label for="">Clave:</label></td>
+            <td><label for="">Especificaciones</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Observaciones</label></td>
+            <td><label for="">#Diametro Interior</label></td>
+            <td><label for="">#Espesor (Calibrado)</label></td>
+            <td><label for="">#Color y Brillo</label></td>
+            <td><label for="">Vo. Bo. Jefe de Producción</label></td>
+            <td><label for="">Zona 1</label></td>
+            <td><label for="">Zona 2</label></td>
+            <td><label for="">Zona 3</label></td>
+            <td><label for="">Husillo</label></td>
+            <td><label for="">Formador</label></td>
+            <td><label for="">Supervisor de turno</label></td>
+            <td><label for="">No. Maquina</label></td>
+            <td><label for="">Fecha</label></td>
+            <td><label for="">Turno</label></td>
+            <td><label for="">Hora</label></td>
+            <td><label for="">Long. Espiral</label></td>
+            <td><label for="">Diametro Interior</label></td>
+            <td><label for="">Espesor calibrado</label></td>
+            <td><label for="">Paso</label></td>
+            <td><label for="">Color/Brillo</label></td>
+            <td><label for="">Tiempo</label></td>
+            <td><label for="">Temp. Zona 1</label></td>
+            <td><label for="">Temp. Zona 2</label></td>
+            <td><label for="">Temp. Zona 3</label></td>
+            <td><label for="">Vel. Extrusora</label></td>
+            <td><label for="">Vel. Jalador</label></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let inspeccion of inspecciones" class="text-center">
+            <td>{{inspeccion.id}}</td>
+            <td>{{inspeccion.cliente}}</td>
+            <td>{{inspeccion.product}}</td>
+            <td>{{inspeccion.frecinsp}}</td>
+            <td>{{inspeccion.tammuestra}}</td>
+            <td>{{inspeccion.clave}}</td>
+            <td>{{inspeccion.longespiral}}</td>
+            <td>{{inspeccion.tiempo}}</td>
+            <td>{{inspeccion.observaciones}}</td>
+            <td>{{inspeccion.dminterior}}</td>
+            <td>{{inspeccion.espcalib}}</td>
+            <td>{{inspeccion.colb}}</td>
+            <td>{{inspeccion.jefeprod}}</td>
+            <td>{{inspeccion.param1}}</td>
+            <td>{{inspeccion.param2}}</td>
+            <td>{{inspeccion.param3}}</td>
+            <td>{{inspeccion.param4}}</td>
+            <td>{{inspeccion.param5}}</td>
+            <td>{{inspeccion.supturno}}</td>
+            <td>{{inspeccion.nomaquina}}</td>
+            <td>{{inspeccion.fecha}}</td>
+            <td>{{inspeccion.turno}}</td>
+            <td>{{inspeccion.hora}}</td>
+            <td>{{inspeccion.longesp}}</td>
+            <td>{{inspeccion.dmint}}</td>
+            <td>{{inspeccion.espcalib}}</td>
+            <td>{{inspeccion.paso}}</td>
+            <td>{{inspeccion.colb}}</td>
+            <td>{{inspeccion.timee}}</td>
+            <td>{{inspeccion.zona1}}</td>
+            <td>{{inspeccion.zona2}}</td>
+            <td>{{inspeccion.zona3}}</td>
+            <td>{{inspeccion.velextrusora}}</td>
+            <td>{{inspeccion.veljalador}}</td>
+            <td><button (click)="EditarInspeccion(inspeccion)" class="btn btn-warning">Editar</button></td>
+            <!--<td><button class="btn btn-danger">Eliminar</button></td>-->
+          </tr>
+        </tbody>
+
+      </table>
+          </div>
+        </div>
+    </div>
+
+      <hr />
+
+    </div>
+  </div>
+</div>

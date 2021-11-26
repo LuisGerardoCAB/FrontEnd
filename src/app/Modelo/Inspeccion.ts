@@ -1,0 +1,36 @@
+export class Inspeccion {
+  id: number;
+  cliente: string;
+  product: string;
+  clave: string;
+  frecinsp: string;
+  tammuestra: string;
+  longespiral: string;
+  tiempo: string;
+  observaciones: string;
+  dminterior: string;
+  espesor: string;
+  colorbrillo: string;
+  jefeprod: string;
+  param1: string;
+  param2: string;
+  param3: string;
+  param4: string;
+  param5: string;
+  supturno: string;
+  nomaquina: string;
+  fecha: string;
+  turno: string;
+  hora: string;
+  longesp: string;
+  dmint: string;
+  espcalib: string;
+  paso: string;
+  colb: string;
+  timee: string;
+  zona1: string;
+  zona2: string;
+  zona3: string;
+  velextrusora: string;
+  veljalador: string;
+}
